@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}現在の天気{% endblock %}
+
+{% block content %}
+    <img src="http://openweathermap.org/img/w/{{ city_weather.icon }}.png" alt="">
+    <h2>{{ city_weather.city }}</h2>
+    <h2>{{ city_weather.temperture }}</h2>
+    <h2>{{ city_weather.description }}</h2>
+{% endblock %}
